@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Fanto</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- fontawsome cdn -->
+  <script src="https://kit.fontawesome.com/1bc074ab79.js" crossorigin="anonymous"></script>
+  <!-- bootstrap cdn -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- bootstrap horizon to require horizontal scrolling -->
+  <link rel="stylesheet" href="public/css/bootstrap-horizon.css">
+  <!-- jquery cdn to work with bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- jquery cdn -->
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  <!-- Google fonts cdn -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Nunito:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  <!-- tailwind css cdn -->
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <!-- custom stylesheet in last to override every other style which needs to be -->
+  <link rel="stylesheet" href="public/css/styles.css">
+</head>
+
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav class="nav navbar navbar-expand-lg navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-10 mb-0 mt-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fab fa-youtube"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#"><i class="fas fa-phone-alt"></i><span style="font-family: 'Ubuntu', sans-serif;font-size:20px;"> (+91) 24915 15482</span></a>
+          </li>
+        </ul>
+
+        <!-- Navbar dropdown -->
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle navItem hoverON" data-toggle="dropdown">Settings</a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a href="#" class="dropdown-item">My Account</a>
+              <a href="#" class="dropdown-item">CheckOut</a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">Logout</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle navItem" data-toggle="dropdown">EUR €</a>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">EUR €</a>
+              <a href="#" class="dropdown-item">USD $</a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">Indian Rupee ₹</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown ">
+            <a href="#" class="nav-link dropdown-toggle navItem" data-toggle="dropdown">English</a>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">English</a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">Français</a>
+            </div>
+          </li>
+        </ul>
+        <!-- Navbar dropdown -->
+
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Navbar scrolling  -->
+    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-light scrollNav theme-bg2 flex">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <img src="public/images/logo2.png" alt="">
+          </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse  justify-content-md-center" id="main_nav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link hoverON dropdown-toggle" href="#" data-toggle="dropdown" onclick="this.blur();"> HOME </a>
+              <ul class="dropdown-menu dropdown-menu-right dropdown:hover dropdown-menu">
+                <li><a class="dropdown-item" href="#"> Home 1</a></li>
+                <li><a class="dropdown-item" href="#"> Home 2 </a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown" onclick="this.blur();"> SHOP </a>
+              <ul class="dropdown-menu dropdown-menu-right dropdown:hover dropdown-menu">
+                <li><a class="dropdown-item" href="#">SHOP GRIP</a></li>
+                <li><a class="dropdown-item" href="#">SHOP LIST</a></li>
+                <li><a class="dropdown-item" href="#">SHOP SINGLE</a></li>
+                <li><a class="dropdown-item" href="#">OTHER PAGES</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown" onclick="this.blur();"> PAGES </a>
+              <ul class="dropdown-menu dropdown-menu-right dropdown:hover dropdown-menu">
+                <li><a class="dropdown-item" href="#">About Page</a></li>
+                <li><a class="dropdown-item" href="#">Cart Page </a></li>
+                <li><a class="dropdown-item" href="#">Checkout Page</a></li>
+                <li><a class="dropdown-item" href="#">Compare Page</a></li>
+                <li><a class="dropdown-item" href="#">Login & Register Page</a></li>
+                <li><a class="dropdown-item" href="#">Account Page</a></li>
+                <li><a class="dropdown-item" href="#">Wishlist Page</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown" onclick="this.blur();"> BLOG </a>
+              <ul class="dropdown-menu dropdown-menu-right dropdown:hover dropdown-menu">
+                <li><a class="dropdown-item" href="#"> BLOG GRID</a></li>
+                <li><a class="dropdown-item" href="#"> BLOG LISt </a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" onclick="this.blur();"> CONTACT US </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar scrolling  -->
+  </header>
+
+  <!-- body content-->
+
+  <!-- slider / carousel -->
+  <div class="sliderAx h-auto mt-3 py-8">
+    <div id="slider-1" class="container mx-auto">
+      <div class="bg-cover bg-center  h-auto text-white py-24 px-10 object-fill slider"
+        style="background-image: url(https://images.unsplash.com/photo-1544427920-c49ccfb85579?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1422&q=80)">
+        <div class="md:w-1/2">
+          <p class="font-bold text-sm uppercase">Services</p>
+          <p class="text-3xl font-bold">Team Fanto</p>
+          <p class="text-2xl mb-10 leading-none">Add Us To Your Wish List</p>
+          <a href="#" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded btnHover">Contact us</a>
+        </div>
+      </div>
+      <br>
+    </div>
+    <div id="slider-2" class="container mx-auto">
+      <div class="bg-cover bg-top  h-auto text-white py-24 px-10 object-fill slider" style="background-image: url(https://images.unsplash.com/photo-1544144433-d50aff500b91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)">
+        <p class="font-bold text-sm uppercase">Services</p>
+        <p class="text-3xl font-bold">Team Fanto</p>
+        <p class="text-2xl mb-10 leading-none">Add Us To Your Wish List</p>
+        <a href="#" class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded btnHover">Place Orders</a>
+      </div>
+      <br>
+    </div>
+  </div>
+  <div class="flex justify-between w-12 mx-auto pb-2">
+    <button id="sButton1" onclick="sliderButton1()" class="bg-purple-300 rounded-full w-4 pb-2 "></button>
+    <button id="sButton2" onclick="sliderButton2() " class="bg-purple-300 rounded-full w-4 p-2"></button>
+  </div>
+  <!-- slider / carousel -->
+
+  <!-- offersSection -->
+  <section class="static-media-section py-80">
+    <div class="container mb-5 mt-5">
+      <div class=" offersSection theme-bg">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="d-flex flex-column flex-sm-row">
+              <img class="align-self-center mb-2 mb-sm-0 mr-auto mr-sm-3" src="public/images/2.1.png" alt="icon">
+              <div class="media-body">
+                <h4 class="title">Free Shipping</h4>
+                <p class="text">On all orders over $75.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="d-flex flex-column flex-sm-row">
+              <img class="align-self-center mb-2 mb-sm-0 mr-auto mr-sm-3" src="public/images/3.1.png" alt="icon">
+              <div class="media-body">
+                <h4 class="title">Free Returns</h4>
+                <p class="text">Returns are free within 9 days</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="d-flex flex-column flex-sm-row">
+              <img class="align-self-center mb-2 mb-sm-0 mr-auto mr-sm-3" src="public/images/4.png" alt="icon">
+              <div class="media-body">
+                <h4 class="title">100% Payment Secure</h4>
+                <p class="text">Your payment are safe with us.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="d-flex flex-column flex-sm-row">
+              <img class="align-self-center mb-2 mb-sm-0 mr-auto mr-sm-3" src="public/images/5.png" alt="icon">
+              <div class="media-body">
+                <h4 class="title">Support 24/7</h4>
+                <p class="text">Contact us 24 hours a day</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- offersSection -->
+
+  <!-- banner -->
+  <div class="common-banner">
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-md-6 mb-30">
+          <div class="ProductSection">
+            <a href="#" class="zoom-in d-block overflow-hidden">
+              <img src="public/images/1.jpg" alt="ProductSection-naile" />
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-30">
+          <div class="ProductSection">
+            <a href="#" class="zoom-in d-block overflow-hidden">
+              <img src="public/images/2.jpg" alt="ProductSection-naile" />
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-30">
+          <div class="ProductSection">
+            <a href="#" class="zoom-in d-block overflow-hidden">
+              <img src="public/images/3.jpg" alt="ProductSection-naile" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- banner -->
+
+  <!-- our products -->
+  <div class="container-fluid text-center">
+    <h2 class="mb-4">Our products</h2>
+    <hr>
+    <p class="text-gray mb-5">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      Perspiciatis, culpa?
+    </p>
+
+
+    <!-- <nav class="product-tab-menu theme1">
+      <ul class="nav nav-pills" id="pills-tab" role="tablist">
+        <li class="nav-item mx-auto">
+          <a class="nav-link active class1" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">new products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">onsale</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">upcoming products</a>
+        </li>
+      </ul>
+    </nav> -->
+
+  </div>
+
+
+  <div class="container-fluid mx-24 wrapper container">
+    <div class="row flex-row flex-nowrap row-horizon">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="public/images/17.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Original Age Defying Cosmetics Makeup</h4>
+            <p class="card-text mb-2 heavy">$11.90</p>
+            <div class="row">
+              <div class="col-6">
+                <button href="#" class="btn btn-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> </button>
+              </div>
+              <div class="col-6">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="public/images/18.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">On Trend Makeup And Beauty Cosmetics</h4>
+            <p class="card-text mb-2 heavy">$11.90</p>
+            <div class="row">
+              <div class="col-6">
+                <button href="#" class="btn btn-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></button>
+              </div>
+              <div class="col-6">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="public/images/19.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">The Cosmetics And Beauty Brand Shoppe</h4>
+            <p class="card-text mb-2 heavy">$11.90</p>
+            <div class="row">
+              <div class="col-6">
+                <button href="#" class="btn btn-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></button>
+              </div>
+              <div class="col-6">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="public/images/20.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Original Clear Water Cosmetics On Trend</h4>
+            <p class="card-text mb-2 heavy">$11.90</p>
+            <div class="row">
+              <div class="col-6">
+                <button href="#" class="btn btn-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></button>
+              </div>
+              <div class="col-6">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="public/images/21.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Original Age Defying Cosmetics Makeup</h4>
+            <p class="card-text mb-2 heavy">$11.90</p>
+            <div class="row">
+              <div class="col-6">
+                <button href="#" class="btn btn-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> </button>
+              </div>
+              <div class="col-6">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="public/images/22.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">On Trend Makeup And Beauty Cosmetics</h4>
+            <p class="card-text mb-2 heavy">$11.90</p>
+            <div class="row">
+              <div class="col-6">
+                <button href="#" class="btn btn-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> </button>
+              </div>
+              <div class="col-6">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="public/images/17.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Original Age Defying Cosmetics Makeup</h4>
+            <p class="card-text mb-2 heavy">$11.90</p>
+            <div class="row">
+              <div class="col-6">
+                <button href="#" class="btn btn-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> </button>
+              </div>
+              <div class="col-6">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="public/images/18.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">On Trend Makeup And Beauty Cosmetics</h4>
+            <p class="card-text mb-2 heavy">$11.90</p>
+            <div class="row">
+              <div class="col-6">
+                <button href="#" class="btn btn-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></button>
+              </div>
+              <div class="col-6">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="public/images/19.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">The Cosmetics And Beauty Brand Shoppe</h4>
+            <p class="card-text mb-2 heavy">$11.90</p>
+            <div class="row">
+              <div class="col-6">
+                <button href="#" class="btn btn-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></button>
+              </div>
+              <div class="col-6">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="public/images/20.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Original Clear Water Cosmetics On Trend</h4>
+            <p class="card-text mb-2 heavy">$11.90</p>
+            <div class="row">
+              <div class="col-6">
+                <button href="#" class="btn btn-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></button>
+              </div>
+              <div class="col-6">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="public/images/21.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Original Age Defying Cosmetics Makeup</h4>
+            <p class="card-text mb-2 heavy">$11.90</p>
+            <div class="row">
+              <div class="col-6">
+                <button href="#" class="btn btn-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> </button>
+              </div>
+              <div class="col-6">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="public/images/17.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Original Age Defying Cosmetics Makeup</h4>
+            <p class="card-text mb-2 heavy">$11.90</p>
+            <div class="row">
+              <div class="col-6">
+                <button href="#" class="btn btn-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> </button>
+              </div>
+              <div class="col-6">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="public/images/18.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">On Trend Makeup And Beauty Cosmetics</h4>
+            <p class="card-text mb-2 heavy">$11.90</p>
+            <div class="row">
+              <div class="col-6">
+                <button href="#" class="btn btn-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></button>
+              </div>
+              <div class="col-6">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="public/images/19.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">The Cosmetics And Beauty Brand Shoppe</h4>
+            <p class="card-text mb-2 heavy">$11.90</p>
+            <div class="row">
+              <div class="col-6">
+                <button href="#" class="btn btn-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></button>
+              </div>
+              <div class="col-6">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="public/images/20.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Original Clear Water Cosmetics On Trend</h4>
+            <p class="card-text mb-2 heavy">$11.90</p>
+            <div class="row">
+              <div class="col-6">
+                <button href="#" class="btn btn-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></button>
+              </div>
+              <div class="col-6">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="public/images/21.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Original Age Defying Cosmetics Makeup</h4>
+            <p class="card-text mb-2 heavy">$11.90</p>
+            <div class="row">
+              <div class="col-6">
+                <button href="#" class="btn btn-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> </button>
+              </div>
+              <div class="col-6">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- our products -->
+    <!-- our products banner -->
+    <div class="common-banner">
+      <div class="container mb-5 mt-5">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-30">
+            <div class="ProductSection">
+              <a class="zoom-in d-block overflow-hidden position-relative" href="#">
+                <img src="public/images/6.jpg" alt="ProductSection-naile"></a>
+
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-30">
+            <div class="ProductSection">
+              <a class="zoom-in d-block overflow-hidden position-relative" href="#">
+                <img src="public/images/7.jpg" alt="ProductSection-naile" /></a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 mb-30">
+            <div class="ProductSection">
+              <a class="zoom-in d-block overflow-hidden position-relative" href="#">
+                <img src="public/images/8.jpg" alt="ProductSection-naile" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- our products banner -->
+  </div>
+
+  <!-- new arrival products -->
+  <div class="text-center">
+    <h2 class="mb-4 my-8">new arrival products</h2>
+    <hr class="mx-2">
+    <p class="text-gray mb-4">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      Perspiciatis, culpa?
+    </p>
+  </div>
+  <!-- new arrival products -->
+  </div>
+
+
+  <div class="container-fluid mx-24 wrapper container">
+    <div class="row flex-row flex-nowrap row-horizon">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="public/images/21.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Original Age Defying Cosmetics Makeup</h4>
+            <p class="card-text mb-2 heavy">$11.90</p>
+            <div class="row">
+              <div class="col-6">
+                <button href="#" class="btn btn-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> </button>
+              </div>
+              <div class="col-6">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="public/images/22.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">On Trend Makeup And Beauty Cosmetics</h4>
+            <p class="card-text mb-2 heavy">$11.90</p>
+            <div class="row">
+              <div class="col-6">
+                <button href="#" class="btn btn-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> </button>
+              </div>
+              <div class="col-6">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="public/images/17.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Original Age Defying Cosmetics Makeup</h4>
+            <p class="card-text mb-2 heavy">$11.90</p>
+            <div class="row">
+              <div class="col-6">
+                <button href="#" class="btn btn-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> </button>
+              </div>
+              <div class="col-6">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="public/images/18.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">On Trend Makeup And Beauty Cosmetics</h4>
+            <p class="card-text mb-2 heavy">$11.90</p>
+            <div class="row">
+              <div class="col-6">
+                <button href="#" class="btn btn-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></button>
+              </div>
+              <div class="col-6">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="public/images/17.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Original Age Defying Cosmetics Makeup</h4>
+            <p class="card-text mb-2 heavy">$11.90</p>
+            <div class="row">
+              <div class="col-6">
+                <button href="#" class="btn btn-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> </button>
+              </div>
+              <div class="col-6">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="public/images/18.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">On Trend Makeup And Beauty Cosmetics</h4>
+            <p class="card-text mb-2 heavy">$11.90</p>
+            <div class="row">
+              <div class="col-6">
+                <button href="#" class="btn btn-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></button>
+              </div>
+              <div class="col-6">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="public/images/19.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">The Cosmetics And Beauty Brand Shoppe</h4>
+            <p class="card-text mb-2 heavy">$11.90</p>
+            <div class="row">
+              <div class="col-6">
+                <button href="#" class="btn btn-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></button>
+              </div>
+              <div class="col-6">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="public/images/20.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Original Clear Water Cosmetics On Trend</h4>
+            <p class="card-text mb-2 heavy">$11.90</p>
+            <div class="row">
+              <div class="col-6">
+                <button href="#" class="btn btn-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></button>
+              </div>
+              <div class="col-6">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="public/images/19.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">The Cosmetics And Beauty Brand Shoppe</h4>
+            <p class="card-text mb-2 heavy">$11.90</p>
+            <div class="row">
+              <div class="col-6">
+                <button href="#" class="btn btn-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></button>
+              </div>
+              <div class="col-6">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="public/images/20.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Original Clear Water Cosmetics On Trend</h4>
+            <p class="card-text mb-2 heavy">$11.90</p>
+            <div class="row">
+              <div class="col-6">
+                <button href="#" class="btn btn-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></button>
+              </div>
+              <div class="col-6">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="public/images/21.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Original Age Defying Cosmetics Makeup</h4>
+            <p class="card-text mb-2 heavy">$11.90</p>
+            <div class="row">
+              <div class="col-6">
+                <button href="#" class="btn btn-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> </button>
+              </div>
+              <div class="col-6">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="public/images/17.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Original Age Defying Cosmetics Makeup</h4>
+            <p class="card-text mb-2 heavy">$11.90</p>
+            <div class="row">
+              <div class="col-6">
+                <button href="#" class="btn btn-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> </button>
+              </div>
+              <div class="col-6">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="public/images/18.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">On Trend Makeup And Beauty Cosmetics</h4>
+            <p class="card-text mb-2 heavy">$11.90</p>
+            <div class="row">
+              <div class="col-6">
+                <button href="#" class="btn btn-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></button>
+              </div>
+              <div class="col-6">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="public/images/19.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">The Cosmetics And Beauty Brand Shoppe</h4>
+            <p class="card-text mb-2 heavy">$11.90</p>
+            <div class="row">
+              <div class="col-6">
+                <button href="#" class="btn btn-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></button>
+              </div>
+              <div class="col-6">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="public/images/20.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Original Clear Water Cosmetics On Trend</h4>
+            <p class="card-text mb-2 heavy">$11.90</p>
+            <div class="row">
+              <div class="col-6">
+                <button href="#" class="btn btn-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></button>
+              </div>
+              <div class="col-6">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card">
+          <img class="card-img-top" src="public/images/21.png" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="card-title">Original Age Defying Cosmetics Makeup</h4>
+            <p class="card-text mb-2 heavy">$11.90</p>
+            <div class="row">
+              <div class="col-6">
+                <button href="#" class="btn btn-info"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> </button>
+              </div>
+              <div class="col-6">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- new arrival products -->
+
+  <!-- latest blogs section -->
+
+  <div class="text-center">
+    <h2 class="mb-4 my-8">from our latest blogs</h2>
+    <hr class="mx-2">
+    <p class="text-gray mb-4">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      Perspiciatis, culpa?
+    </p>
+  </div>
+
+  <!-- latest blogs section -->
+  <div class="common-banner mt-5">
+    <div class="container mb-5">
+      <div class="row flex-row flex-nowrap">
+        <div class="col-md-3 col-sm-6 col-lg-3 mb-30">
+          <div class="ProductSection">
+            <div class="col-12">
+              <a href="#" class="zoom-in d-block overflow-hidden">
+                <img src="public/images/9.png" alt="ProductSection-naile" />
+              </a>
+            </div>
+            <div class="col-12 newArrivalText">
+              <h4 class="text-2xl mb-2" style="color:#5a5ac9">fashion</h4>
+              <p class="text-1xl font-bold mb-2"><a href="#" class="bg-gray" style="font-family:monospace;">this is first post for blog</a></p>
+              <p class="small">posted by <a href="#" class="bg-gray" style="font-family:monospace;color:#5a5ac9; ">Aman Kuliyal</a> on
+                31st may 2021
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-lg-3 mb-30">
+          <div class="ProductSection">
+            <div class="col-12">
+              <a href="#" class="zoom-in d-block overflow-hidden">
+                <img src="public/images/10.png" alt="ProductSection-naile" />
+              </a>
+            </div>
+            <div class="col-12 newArrivalText">
+              <h4 class="text-2xl mb-2" style="color:#5a5ac9">fashion</h4>
+              <p class="text-1xl font-bold mb-2"><a href="#" class="bg-gray" style="font-family:monospace;">this is first post for blog</a></p>
+              <p class="small">posted by <a href="#" class="bg-gray" style="font-family:monospace;color:#5a5ac9; ">Aman Kuliyal</a> on
+                31st may 2021
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-lg-3 mb-30">
+          <div class="ProductSection">
+            <div class="col-12">
+              <a href="#" class="zoom-in d-block overflow-hidden">
+                <img src="public/images/11.png" alt="ProductSection-naile" />
+              </a>
+            </div>
+            <div class="col-12 newArrivalText">
+              <h4 class="text-2xl mb-2" style="color:#5a5ac9">fashion</h4>
+              <p class="text-1xl font-bold mb-2"><a href="#" class="bg-gray" style="font-family:monospace;">this is first post for blog</a></p>
+              <p class="small">posted by <a href="#" class="bg-gray" style="font-family:monospace;color:#5a5ac9; ">Aman Kuliyal</a> on
+                31st may 2021
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-lg-3 mb-30">
+          <div class="ProductSection">
+            <div class="col-12">
+              <a href="#" class="zoom-in d-block overflow-hidden">
+                <img src="public/images/12.png" alt="ProductSection-naile" />
+              </a>
+            </div>
+            <div class="col-12 newArrivalText">
+              <h4 class="text-2xl mb-2" style="color:#5a5ac9">fashion</h4>
+              <p class="text-1xl font-bold mb-2"><a href="#" class="bg-gray" style="font-family:monospace;">this is first post for blog</a></p>
+              <p class="small">posted by <a href="#" class="bg-gray" style="font-family:monospace;color:#5a5ac9; ">Aman Kuliyal</a> on
+                31st may 2021
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- latest blog section -->
+
+  <hr class="mx-2" style="border-color: gray!important;border-style: dashed;;;;">
+
+  <!-- brands -->
+  <div class="container-fluid mx-24 wrapper container mt-3">
+    <div class="row flex-row flex-nowrap row-horizon">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="single-brand">
+          <a href="#" class="brand-thumb" tabindex="-1">
+            <img src="public/images/26.jpg" alt="brand-thumb-nail">
+          </a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="single-brand">
+          <a href="#" class="brand-thumb" tabindex="0">
+            <img src="public/images/27.jpg" alt="brand-thumb-nail">
+          </a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="single-brand">
+          <a href="#" class="brand-thumb" tabindex="0">
+            <img src="public/images/23.jpg" alt="brand-thumb-nail">
+          </a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="single-brand">
+          <a href="#" class="brand-thumb" tabindex="0">
+            <img src="public/images/25.jpg" alt="brand-thumb-nail">
+          </a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="single-brand">
+          <a href="#" class="brand-thumb" tabindex="0">
+            <img src="public/images/26.jpg" alt="brand-thumb-nail">
+          </a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="single-brand">
+          <a href="#" class="brand-thumb" tabindex="0">
+            <img src="public/images/27.jpg" alt="brand-thumb-nail">
+          </a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="single-brand">
+          <a href="#" class="brand-thumb" tabindex="-1">
+            <img src="public/images/26.jpg" alt="brand-thumb-nail">
+          </a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="single-brand">
+          <a href="#" class="brand-thumb" tabindex="0">
+            <img src="public/images/27.jpg" alt="brand-thumb-nail">
+          </a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="single-brand">
+          <a href="#" class="brand-thumb" tabindex="0">
+            <img src="public/images/23.jpg" alt="brand-thumb-nail">
+          </a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="single-brand">
+          <a href="#" class="brand-thumb" tabindex="0">
+            <img src="public/images/25.jpg" alt="brand-thumb-nail">
+          </a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="single-brand">
+          <a href="#" class="brand-thumb" tabindex="0">
+            <img src="public/images/26.jpg" alt="brand-thumb-nail">
+          </a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="single-brand">
+          <a href="#" class="brand-thumb" tabindex="0">
+            <img src="public/images/27.jpg" alt="brand-thumb-nail">
+          </a>
+        </div>
+      </div>
+    </div><button class="slick-next slick-arrow slick-disabled" style="" aria-disabled="true"><i class="ion-chevron-right"></i></button>
+  </div>
+  <!-- brands -->
+
+  <!-- body content-->
+
+  <!-- Footer -->
+
+  <footer class="text-center text-lg-start bg-light text-muted">
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Section: Links  -->
+
+    <section>
+      <div class="container text-center text-md-start mt-5">
+
+        <!-- Subscriber form -->
+
+        <div class="row">
+          <div class="col col-lg-3 col-md-4 col-sm-6">
+            <div class="footer-logo mb-25">
+              <a href="">
+                <img src="public/images/logo2.png" alt="footer logo" />
+              </a>
+              <p class="mb-30">
+                We are a team of professional designers and developers that create
+                high quality wordpress plugins, Html, React Template.
+              </p>
+            </div>
+          </div>
+          <div class="col col-lg-3 col-md-4 col-sm-6">
+            <h2 class="text-2xl font-bold mb-4">
+              Information
+            </h2>
+            <p>
+              <a href="#!" class="text-reset">About Us</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Payment</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Contact Us</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Stores</a>
+            </p>
+          </div>
+          <div class="col col-lg-3 col-md-4 col-sm-6">
+
+            <h2 class="text-2xl font-bold mb-4">
+              Useful links
+            </h2>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <div class="col col-lg-3 col-md-4 col-sm-6 mb-30">
+            <div class="footer-widget">
+              <div class="border-bottom cbb1 mb-25">
+                <div class="section-title">
+                  <h2 class="text-3xl font-bold">Newsletter</h2>
+                </div>
+              </div>
+              <p class="mb-2">
+                Subcribe to the TheFace mailing list to receive update on mnew
+                arrivals, special offers and other discount information.
+              </p>
+              <div>
+                <form class="flex">
+                  <input class="rounded-l-lg p-4 border-t mr-0 border-b border-l text-gray-800 border-gray-200" placeholder="your@mail.com" />
+                  <button class="px-8 rounded-r-lg bg-yellow-400  text-gray-800 font-bold p-4 uppercase border-yellow-500 border-t border-b border-r">Subscribe</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Subscriber form -->
+
+      </div>
+      </div>
+    </section>
+
+    <!-- Copyright -->
+    <div class="copyRight bg-dark py-15 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-xl-4 order-last order-md-first">
+            <div class="text-md-right text-center">
+              <img src="public/images/copyright.png" alt="img" />
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-8">
+            <div class="text-md-left text-center mt-5 mt-md-0">
+              <p>
+                Copyright &copy; <a href="#" class="bg-white" style="font-family:monospace;">Aman Kuliyal</a>.
+                All Rights Reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <script type="text/javascript" src="public/script/index.js"></script>
+</body>
+
+</html>

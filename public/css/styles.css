@@ -1,0 +1,235 @@
+/* body elements */
+p {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-family: monospace;
+}
+
+.btnHove:hover {
+  background-image: none;
+  background-color: #5a5ac9;
+}
+
+/* Flaired edges, by Tomas Theunissen */
+hr {
+  overflow: visible;
+  /* For IE */
+  height: 30px;
+  border-style: solid;
+  border-color: #5a5ac9;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+
+hr:before {
+  /* Not really supposed to work, but does */
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+}
+
+h4 {
+  text-transform: capitalize;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+/* card{
+  width: 20rem;
+} */
+/* navbar */
+.navBrand {
+  /* font-family: 'Noto Sans JP', sans-serif; */
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 25px;
+}
+
+.navItem {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+}
+
+/* navbar scrolling */
+/* .Hover:hover{
+  color:#5a5ac9;
+} */
+.theme-bg2 {
+  background-color: #fff !important;
+  color: #5a5ac9 !important;
+  border: 0 solid;
+  padding: 10px;
+  box-shadow: 2px 2px 18px #888888;
+}
+
+.fixed-top {
+  top: -40px;
+  transform: translateY(40px);
+  transition: transform .3s;
+}
+
+a:-webkit-any-link {
+  color: black;
+  cursor: pointer;
+  text-decoration: inherit;
+}
+
+a:-webkit-any-link:hover {
+  /* background-color: #5a5ac9 */
+  color: #5a5ac9;
+  cursor: context-menu;
+  text-decoration: underline;
+}
+
+.scrollNav {
+  text-align: center;
+  text-anchor: middle;
+}
+
+.nav-link, .nav-item {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin: auto;
+  box-shadow: none !important;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; // remove the gap so it doesn't close
+}
+
+/* navbar scrolling */
+/* slider */
+.slider {
+  padding-top: 30rem;
+}
+
+/* slider */
+/* offers section */
+.theme-bg {
+  background-color: #5a5ac9 !important
+}
+
+.offersSection {
+  padding: 45px 30px
+}
+
+.title {
+  text-transform: capitalize;
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: #fff
+}
+
+.text {
+  color: #fff
+}
+
+/* banner */
+.ProductSection img {
+  width: 100%
+}
+
+@media screen and (max-width:767px) {
+  .ProductSection img {
+    width: 100%
+  }
+}
+
+.zoom-in img {
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear
+}
+
+.zoom-in:hover img {
+  -webkit-transform: scale(1.045) rotate(.05deg);
+  transform: scale(1.045) rotate(.05deg)
+}
+
+/* products */
+.heavy {
+  text-decoration: inherit;
+  font-family: inherit;
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+/* new arrival products  */
+.newArrivalText {
+  text-transform: capitalize;
+}
+
+.small{
+  font-size: 14px;
+}
+
+/* brands */
+.single-brand a img {
+  display: block;
+  margin: 0 auto
+}
+
+.single-brand a:hover img {
+  -webkit-transform: scale(1.045) rotate(.05deg);
+  transform: scale(1.045) rotate(.05deg)
+}
+
+.slick-slider {
+  background: transparent;
+}
+
+/* brands2 */
+.colored-section {
+  color: #fff;
+  background-color: #5a5ac9;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+#testimonials {
+  background-color: #5a5ac9;
+  text-align: center;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 10px;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+#press {
+  background-color: #5a5ac9;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+/* copyRight */
+.copyRight {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #fff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.bg-white {
+  background-color: transparent !important;
+  color: #fff !important;
+  padding: 0;
+}
